@@ -1,0 +1,20 @@
+2024-05-31 16:06:07,141 DEBUG    root            Loaded Command Group: ['gcloud', 'sql']
+2024-05-31 16:06:07,143 DEBUG    root            Loaded Command Group: ['gcloud', 'sql', 'import']
+2024-05-31 16:06:07,167 DEBUG    root            Loaded Command Group: ['gcloud', 'sql', 'import', 'csv']
+2024-05-31 16:06:07,170 DEBUG    root            Running [gcloud.sql.import.csv] with arguments: [--database: "emotions", --table: "emotions", INSTANCE: "googlecloudsql", URI: "gs://emotion_tweetspsc/emotion_tweetspsc.csv"]
+2024-05-31 16:06:11,655 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): sqladmin.googleapis.com:443
+2024-05-31 16:06:12,179 DEBUG    urllib3.connectionpool https://sqladmin.googleapis.com:443 "POST /sql/v1beta4/projects/durable-sound-424715-q2/instances/googlecloudsql/import?alt=json HTTP/1.1" 200 None
+2024-05-31 16:06:12,185 INFO     ___FILE_ONLY___ Importing data into Cloud SQL instance...
+2024-05-31 16:06:13,188 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): sqladmin.googleapis.com:443
+2024-05-31 16:06:13,473 DEBUG    urllib3.connectionpool https://sqladmin.googleapis.com:443 "GET /sql/v1beta4/projects/durable-sound-424715-q2/operations/3bdf082e-56cc-464a-828e-f65400000034?alt=json HTTP/1.1" 200 None
+2024-05-31 16:06:15,696 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): sqladmin.googleapis.com:443
+2024-05-31 16:06:15,975 DEBUG    urllib3.connectionpool https://sqladmin.googleapis.com:443 "GET /sql/v1beta4/projects/durable-sound-424715-q2/operations/3bdf082e-56cc-464a-828e-f65400000034?alt=json HTTP/1.1" 200 None
+2024-05-31 16:06:20,677 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): sqladmin.googleapis.com:443
+2024-05-31 16:06:21,086 DEBUG    urllib3.connectionpool https://sqladmin.googleapis.com:443 "GET /sql/v1beta4/projects/durable-sound-424715-q2/operations/3bdf082e-56cc-464a-828e-f65400000034?alt=json HTTP/1.1" 200 None
+2024-05-31 16:06:29,252 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): sqladmin.googleapis.com:443
+2024-05-31 16:06:29,537 DEBUG    urllib3.connectionpool https://sqladmin.googleapis.com:443 "GET /sql/v1beta4/projects/durable-sound-424715-q2/operations/3bdf082e-56cc-464a-828e-f65400000034?alt=json HTTP/1.1" 200 None
+2024-05-31 16:06:29,540 INFO     ___FILE_ONLY___ Imported data from [gs://emotion_tweetspsc/emotion_tweetspsc.csv] into [https://sqladmin.googleapis.com/sql/v1beta4/projects/durable-sound-424715-q2/instances/googlecloudsql].
+
+2024-05-31 16:06:29,540 DEBUG    root            Chosen display Format:value(.)
+2024-05-31 16:06:29,541 INFO     root            Display format: "value(.)"
+2024-05-31 16:06:29,541 DEBUG    root            SDK update checks are disabled.

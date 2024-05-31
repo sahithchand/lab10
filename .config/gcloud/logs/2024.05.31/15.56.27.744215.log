@@ -1,0 +1,14 @@
+2024-05-31 15:56:27,746 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2024-05-31 15:56:27,804 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'login']
+2024-05-31 15:56:27,807 DEBUG    root            Running [gcloud.auth.login] with arguments: []
+2024-05-31 15:56:35,489 DEBUG    requests_oauthlib.oauth2_session Generated new state A2zxi3ttKtGIvQjRSi6qbI3pdDKwVp.
+2024-05-31 15:56:35,489 INFO     ___FILE_ONLY___ Go to the following link in your browser, and complete the sign-in prompts:
+
+    https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=32555940559.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fsdk.cloud.google.com%2Fauthcode.html&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fsqlservice.login+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&state=A2zxi3ttKtGIvQjRSi6qbI3pdDKwVp&prompt=consent&token_usage=remote&access_type=offline&code_challenge=ZUAtqlSHs79IeO8T2mWiUU5BKh1LGtgV5met-no7JrI&code_challenge_method=S256
+
+
+2024-05-31 15:57:10,057 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+

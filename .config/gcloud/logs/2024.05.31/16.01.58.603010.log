@@ -1,0 +1,24 @@
+2024-05-31 16:01:58,603 DEBUG    root            Loaded Command Group: ['gcloud', 'sql']
+2024-05-31 16:01:58,605 DEBUG    root            Loaded Command Group: ['gcloud', 'sql', 'import']
+2024-05-31 16:01:58,628 DEBUG    root            Loaded Command Group: ['gcloud', 'sql', 'import', 'csv']
+2024-05-31 16:01:58,631 DEBUG    root            Running [gcloud.sql.import.csv] with arguments: [--database: "[DATABASE_NAME]", --table: "[TABLE_NAME]", INSTANCE: "[INSTANCE_NAME]", URI: "gs://[BUCKET_NAME]/[FILE_NAME]"]
+2024-05-31 16:02:09,366 DEBUG    root            (gcloud.sql.import.csv) Aborted by user.
+Traceback (most recent call last):
+  File "/snap/google-cloud-cli/239/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/239/lib/googlecloudsdk/calliope/backend.py", line 815, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/239/lib/surface/sql/import/csv.py", line 75, in Run
+    return import_util.RunCsvImportCommand(args, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/239/lib/googlecloudsdk/command_lib/sql/import_util.py", line 235, in RunCsvImportCommand
+    return RunImportCommand(args, client, csv_import_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/239/lib/googlecloudsdk/command_lib/sql/import_util.py", line 133, in RunImportCommand
+    console_io.PromptContinue(
+  File "/snap/google-cloud-cli/239/lib/googlecloudsdk/core/console/console_io.py", line 305, in PromptContinue
+    raise OperationCancelledError(cancel_string)
+googlecloudsdk.core.console.console_io.OperationCancelledError: Aborted by user.
+2024-05-31 16:02:09,370 ERROR    root            (gcloud.sql.import.csv) Aborted by user.
